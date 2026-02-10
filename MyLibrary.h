@@ -14,7 +14,7 @@ class MyLibrary : public AbstractLibrary {
 
 public:
     MyLibrary() = default;
-    ~MyLibrary() = default;
+    virtual ~MyLibrary() = default;
     void addBook(Book * book) override;
     void borrowBook(Member * member, string title) override;
     void returnBook(Member * member, Book * book) override;
